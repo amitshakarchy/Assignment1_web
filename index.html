@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="emojionearea.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>  
+<script src="emojionearea.min.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" type="text/css" href="style.css" />
+
 <!--link rel="stylesheet" type="text/css" href="/Assignment1_web/style.css" /-->
 </head>
 <body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"></script>
+
 <div id="menu">
 
 <li><a href="#about">About Me</a></li>
@@ -110,14 +120,12 @@ I admit, I find interest in almost every thing I touch. Hence, answering the que
 <h2>give me a like</h2>
 <br/>
 <br/>
-<div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0"></script>
-
   <!-- Your like button code -->
   <div class="fb-like" 
-    data-href="https://www.your-domain.com/amitshakarchy.github.io/Assignment1_web/" 
+    data-href="https://amitshakarchy.github.io/Assignment1_web/" 
     data-layout="standard" 
-    data-action="like" 
+	data-action="like" 
+	data-width="400"
     data-show-faces="true">
   </div>
 </section>
@@ -132,17 +140,40 @@ I admit, I find interest in almost every thing I touch. Hence, answering the que
 <section id="spa" class="section">
 <br/>
 <br/>
-ans
+<h2>ans</h2>
 </section>
 
 <section id="contact" class="section">
 <br/>
 <br/>
-contact me
+<h2>contact me</h2>
 <br/>
 <br/>
+<form action="mailto:amitshakarchy@gmail.com" method="post" autocomplete="on">
+	
+	<ul>
+	   <label for="mail">E-mail:</label>
+	   <input type="email" id="mail" name="user_mail">
+<br>
+	   <label for="msg">Message:</label>
+	   <textarea id="msg" name="user_message"></textarea>
+	
+	 <li class="button">
+		<button type="submit">Send</button>
+	  </li>
+	</ul>
+   </form>
+   <br/>
+   <br/>
 </section>
 
+
+
+<script>
+	$(document).ready(function(){
+		 $("#msg").emojioneArea();
+	})
+</script>
 
 <script type="text/javascript">
 $(function(){
