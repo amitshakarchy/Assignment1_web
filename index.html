@@ -24,7 +24,7 @@
 <li><a href="#photos">My Photos</a></li>
 <li><a href="#playlist">My Playlist</a></li>
 <li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
+<li><a href="#qrcode">QR code</a></li>
 <li><a href="#spa">Q&A</a></li>
 <li><a href="#contact">Contact Me</a></li>
 
@@ -34,20 +34,21 @@
 <br/>
 <br/>
 <br/>
-<br/>
 <h2>Hi! It's nice to have you here.</h2>
 <br/>
-<br/>
-Hi all! my name is Amit Shakarchy, I'm 25 years old and a native "dromit" (originaly born and raised in the south). Im a student in Software and Information Systems Engineering at BGU. 
-<br/>
-I'm an anty-fraud analyst in Dell-EMC for the las six months, and I hope to gain some knowledge in the field.
-<br/>
-I'm a begginer watercolor paintress (for real, your 5 years old son would paint better than I do)
-<br/>
-But I love it, so who cares :)
-<br/>
-I admit, I find interest in almost every thing I touch. Hence, answering the question of selecting a speciphic area of interest would be a little bit difficult.
-<br/> When it comes to my excpections from the cours, i hope to expand my horizone in general and get familiar with many tools as possible. 
+<div id="aboutTxt">
+	<br/>
+	Hey there! my name is Amit Shakarchy, I'm 25 years old and a native "dromit" (originally born and raised in the south).
+	<br/>
+	I'm a third-year student in Software and Information Systems Engineering at BGU.
+	I work as an anty-fraud analyst in Dell-EMC for the last six months, and I hope to gain some knowledge in the field.
+	<br/>
+	I'm a beginner watercolor paintress (for real, your 5 years old son would paint better than I do)
+	But I love it, so who cares :)
+	<br/>
+	I admit I find interest in almost everything I touch. Hence, answering the question of selecting a specific area of interest would be a little bit difficult.
+	When it comes to my expectations from the course, I hope to expand my horizons in general and get familiar with many tools as possible.	
+</div>
 
 </section>
 
@@ -141,6 +142,22 @@ I admit, I find interest in almost every thing I touch. Hence, answering the que
 <br/>
 <br/>
 <h2>ans</h2>
+<br/>
+<ol id="answers" type="1">
+	<li style="font-weight: bold">Three main differences between web1.0, web2.0 and web3.0:</li>
+	<ol type="a">
+		<li >Web1.0 is considered a "read-only static web" web, while web 2.0 is considered a "read-write interactive web" web and web3.0 as a "read-write intelligent web".</li>
+		<li>On web1.0, companies publish content and the rest of the users are consumers. On web2.0, companies build platforms to let people publish their content and interact with others. On web3.0, applications are built for interactions, companies build platforms for knowledge sharing and to let people publish services.</li>
+		<li>Web1.0 is company-oriented (companies post their information and customers consume that data), web2.0 is community-oriented - platforms such as Facebook were developed for enhancing web-socializing. Web3.0 is individual-oriented - each person communicates with his applications, knowledge is accessible to the individual.</li>
+	</ol>
+	<li style="font-weight: bold">Usecase example - medications side effects</li>
+	<ol type="a">
+		<li >On web1.0 - I would have to go to the pharmaceutical company's website and look for the side-effects description of the desired medication. I could use a search engine and try to type my query, but many times results are inaccurate. </li>
+  		<li>On web2.0 - I would use a search engine and would type the query "side effect Optalgin". Google, for example, initiated the PageRank algorithm. Therefore, I expect to find a relevant result quickly.</li>
+		<li>On web3.0 - I can simply type the query "Optalgin" and find it's side effects either in the information box made by Google, or one of the top searching results. </li>
+	</ol>
+<br/>
+<br/>
 </section>
 
 <section id="contact" class="section">
@@ -156,10 +173,13 @@ I admit, I find interest in almost every thing I touch. Hence, answering the que
 	   <input type="email" id="mail" name="user_mail">
 <br>
 	   <label for="msg">Message:</label>
-	   <textarea id="msg" name="user_message"></textarea>
+	   (you may copy one of the emojies here or pick one using the emojie button)
+		   &#129321	&#129322	&#129315	&#129313	&#127812
+
+	   <textarea id="msg" name="user_message" onclick="displayRadioValue()"></textarea>
 	
 	 <li class="button">
-		<button type="submit">Send</button>
+		<button type="submit" name="submit">Send</button>
 	  </li>
 	</ul>
    </form>
@@ -167,6 +187,7 @@ I admit, I find interest in almost every thing I touch. Hence, answering the que
    <br/>
 </section>
 
+<div id="result"></div> 
 
 
 <script>

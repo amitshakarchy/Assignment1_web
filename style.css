@@ -1,3 +1,8 @@
+
+	body {
+		background-image: url("scott-webb-wsMwDxF8SKA-unsplash.jpg");
+
+	  }
 #menu
 {
 		list-style-type: none;
@@ -10,7 +15,22 @@
 		top: 0;
 		z-index: 1
 }
-		
+	
+#aboutTxt
+{
+	background-color: whitesmoke;
+	margin: 0 auto;
+	width: 900px;
+	padding: 2em;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+	overflow: auto;
+	text-align: justify;;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: medium;
+}
+
+
 li 
 {
 		float: left;
@@ -82,7 +102,7 @@ margin: auto;
 
 h2{
 		  text-align: center;
-}
+		  font-family: "Comic Sans MS", cursive, sans-serif;}
 
 iframe {
 display:block;
@@ -107,12 +127,28 @@ display:block;
 
 
 
+#answers
+{
+	background-color: whitesmoke;
+	margin: 0 auto;
+	width: 900px;
+	padding: 2em;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+	overflow: auto;
+	text-align: justify;;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: medium;
+}
+
 
 
 form {
+
+	background-color: whitesmoke;
 	/* Center the form on the page */
 	margin: 0 auto;
-	width: 400px;
+	width: 600px;
 	
 	/* Form outline */
 	padding: 2em;
@@ -129,6 +165,7 @@ form {
   
   form li + li {
 	margin-top: 1em;
+	
   }
   
   label {
