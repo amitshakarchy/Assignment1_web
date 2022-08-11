@@ -1,9 +1,8 @@
-# 313278889
+# Amit Shakarchy
 first assignment in web development course- building my first site.
 
 Details:
 username - amitshakarchy
-313278889
-https://amitshakarchy.github.io/313278889/
+https://amitshakarchy.github.io/amitshakarchy/
 
 :)
